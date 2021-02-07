@@ -6,6 +6,8 @@
 }
 
 .dropdown {
-    flex: 2;
+    border: red dotted;
+    display: flex;
     padding: 1em;
+    flex-direction: column;
 }
