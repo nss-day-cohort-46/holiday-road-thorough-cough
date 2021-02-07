@@ -5,6 +5,7 @@ import "./attractions/AttractionSelect.js"
 import  "./eateries/EaterySelect.js"
 import { AttractionPreview } from "./attractions/AttractionPreview.js"
 import { EateryPreview } from "./eateries/EateryPreview.js"
+import "./weather/WeatherPreview.js"
 
 ParkPreview()
 AttractionPreview()
