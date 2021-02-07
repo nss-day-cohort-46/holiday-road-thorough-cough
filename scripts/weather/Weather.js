@@ -9,9 +9,6 @@ export const FiveDayForecast = (dailyWeatherArray) => {
         <p class="weatherLow">Low: ${day.temp.min}˚</p>
         <p class="weatherHigh">High: ${day.temp.max}˚</p>
         <p class="weatherHigh">Feels Like: ${day.feels_like.day}˚</p>
-        
         `
     }).join('')
-
 }
-    // ${weatherObject.weather.map(w => `<img class="weatherimg"${w.icon}')}/>
