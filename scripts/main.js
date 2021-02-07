@@ -5,11 +5,10 @@ import "./attractions/AttractionSelect.js"
 import  "./eateries/EaterySelect.js"
 import { AttractionPreview } from "./attractions/AttractionPreview.js"
 import { EateryPreview } from "./eateries/EateryPreview.js"
-import {getWeather} from "./weather/WeatherProvider.js"
+import "./weather/WeatherPreview.js"
 
 ParkPreview()
 AttractionPreview()
 EateryPreview()
 selectPark()
 // EateriesDropdown()
-getWeather('33.441792', '-94.037689')
