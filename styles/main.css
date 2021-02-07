@@ -1,0 +1,11 @@
+.container {
+    background-color: rgb(49, 143, 111)    ;
+}
+.newItineraryContainer {
+    display: flex;
+}
+
+.dropdown {
+    flex: 2;
+    padding: 1em;
+}
