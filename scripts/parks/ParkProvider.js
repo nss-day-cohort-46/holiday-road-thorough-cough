@@ -10,3 +10,4 @@ export const getParks = () => {
         .then(parsedR => parks = parsedR.data)
         .then(() => console.log(parks))
 }
+
