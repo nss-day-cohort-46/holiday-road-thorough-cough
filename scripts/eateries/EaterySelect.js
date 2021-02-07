@@ -24,7 +24,12 @@ export const EateriesDropdown = (collectionOfEateries) => {
 
 eventHub.addEventListener("change", event => {
     if (event.target.id === "eatery--dropdown") {
-        const eatery = new CustomEvent("eaterySelected")
-        eventHub.dispatchEvent(eatery)
+        const eateryChosen = new CustomEvent("EaterySelected", {
+            detail: {
+                eateryChosen: +event.target.value
+            }
+        })
+        eventHub.dispatchEvent(eateryChosen)
     }
 })
+
