@@ -8,6 +8,5 @@ export const getParks = () => {
     return fetch(`https://developer.nps.gov/api/v1/parks?&api_key=${api_key.npsKey}&limit=1000`)
         .then(r => r.json())
         .then(parsedR => parks = parsedR.data)
-        .then(() => console.log(parks))
 }
 
