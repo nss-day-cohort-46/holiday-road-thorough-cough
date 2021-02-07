@@ -5,10 +5,12 @@ export const FiveDayForecast = (dailyWeatherArray) => {
             day.dt * 1000
         ).toLocaleDateString()
         return `
+        <div class=weatherCard>
         <p class="weatherForecast">${date}</p>
         <p class="weatherLow">Low: ${day.temp.min}˚</p>
         <p class="weatherHigh">High: ${day.temp.max}˚</p>
         <p class="weatherHigh">Feels Like: ${day.feels_like.day}˚</p>
+        </div>
         `
     }).join('')
 }

@@ -8,7 +8,7 @@ export const Eatery = (eateryObj) => {
         } else {
             return `
             <h5 class="eateriesHeader">Eateries</h5>
-                <p>${eateryObj.businessName} IS NOT ADA ACCESSIBLE</p>
+                <p>⚠ ${eateryObj.businessName} IS NOT ADA ACCESSIBLE</p>
             `
         }
     }

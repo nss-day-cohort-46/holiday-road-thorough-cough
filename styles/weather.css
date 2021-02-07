@@ -1,0 +1,8 @@
+.weatherPreview {
+    display: flex;
+    padding: 1em;
+}
+
+.weatherCard {
+    flex: 2;
+}

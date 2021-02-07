@@ -1,6 +1,7 @@
 
 export const Park = (parkObj) => {
     return `
+        <h5 class="onePark">Park</h5>
         <h2 class="onePark">${parkObj.name}  <button id="park-deets">more details</button></h2>
         <p class="oneParkDesc">${parkObj.description}</p>
         <h5 class="oneParkHours">Operating Hours</h5>
