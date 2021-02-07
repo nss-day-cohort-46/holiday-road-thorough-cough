@@ -31,5 +31,4 @@ eventHub.addEventListener("change", event => {
         })
         eventHub.dispatchEvent(attractionChosen)
     }
-    console.log(event)
 })

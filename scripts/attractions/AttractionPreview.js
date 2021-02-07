@@ -9,7 +9,6 @@ export const AttractionPreview = () => {
         getAttractions().then(() => {
             const attractions = useAttractions()
             const oneAttraction = attractions.find(attraction => attraction.id === +event.detail.attractionChosen)
-            console.log(oneAttraction, "attraction")
             attractionContainer.innerHTML = Attraction(oneAttraction)
         })
     })

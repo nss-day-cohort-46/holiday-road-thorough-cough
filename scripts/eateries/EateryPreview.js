@@ -8,9 +8,7 @@ export const EateryPreview = () => {
     eventHub.addEventListener("EaterySelected", event => {
         getEateries().then(() => {
             const eateries = useEateries()
-            console.log(eateries, event)
             const oneEatery = eateries.find(eatery => eatery.id === event.detail.eateryChosen)
-            console.log(oneEatery, "eatery")
             eateryContainer.innerHTML = Eatery(oneEatery)
         })
     })
