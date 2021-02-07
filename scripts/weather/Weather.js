@@ -7,9 +7,9 @@ export const FiveDayForecast = (dailyWeatherArray) => {
         return `
         <div class=weatherCard>
         <p class="weatherForecast">${date}</p>
-        <p class="weatherLow">Low: ${day.temp.min}˚</p>
-        <p class="weatherHigh">High: ${day.temp.max}˚</p>
-        <p class="weatherHigh">Feels Like: ${day.feels_like.day}˚</p>
+        <p class="weatherLow">Low: ${Math.round(day.temp.min)}˚</p>
+        <p class="weatherHigh">High: ${Math.round(day.temp.max)}˚</p>
+        <p class="weatherHigh">Feels Like: ${Math.round(day.feels_like.day)}˚</p>
         </div>
         `
     }).join('')
