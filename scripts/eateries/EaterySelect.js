@@ -12,8 +12,8 @@ eventHub.addEventListener("parkSelected", event => {
     })
 })
 
-const EateriesDropdown = (collectionOfEateries) => {
-    return `<select name="select" id="attraction--dropdown" required>
+export const EateriesDropdown = (collectionOfEateries) => {
+    return `<select name="select" id="eatery--dropdown" required>
         <option value="0">Select an Eatery...</option>
         ${collectionOfEateries.map(eateries => {
         return `<option value="${eateries.id}">${eateries.businessName}</option>`
@@ -21,3 +21,10 @@ const EateriesDropdown = (collectionOfEateries) => {
         }
     </select>`
 }
+
+eventHub.addEventListener("change", event => {
+    if (event.target.id === "eatery--dropdown") {
+        const eatery = new CustomEvent("eaterySelected")
+        eventHub.dispatchEvent(eatery)
+    }
+})

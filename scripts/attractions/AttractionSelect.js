@@ -21,3 +21,15 @@ const AttractionsDropdown = (collectionOfAttractions) => {
         }
     </select>`
 }
+
+eventHub.addEventListener("change", event => {
+    if (event.target.id.startsWith("attraction--")) {
+        const attractionChosen = new CustomEvent("AttractionSelected", {
+            detail: {
+                attractionChosen: event.target.value
+            }
+        })
+        eventHub.dispatchEvent(attractionChosen)
+    }
+    console.log(event)
+})
