@@ -5,4 +5,7 @@
 
 .weatherCard {
     flex: 2;
+    padding: 1em;
+    background-color: rgb(178, 243, 232);
 }
+

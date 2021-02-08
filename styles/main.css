@@ -1,4 +1,5 @@
 @import "./weather.css";
+@import "./park.css";
 
 .container {
     background-color: rgb(49, 143, 111)    ;
@@ -6,13 +7,13 @@
 .mainContainer {
     display: flex
 }
-.newItineraryContainer {
-    display:flex
-    flex: 2;
-}
+/* .newItineraryContainer {
+    display:flex;
+    flex: 1;
+} */
 
 .previews {
-    flex: 2
+    flex: 1
 }
 
 .dropdown {

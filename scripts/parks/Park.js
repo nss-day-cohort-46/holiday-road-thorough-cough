@@ -1,6 +1,7 @@
 
 export const Park = (parkObj) => {
     return `
+    <div class="oneParkPreview">
         <h5 class="onePark">Park</h5>
         <h2 class="onePark">${parkObj.name}  <button id="park-deets">more details</button></h2>
         <p class="oneParkDesc">${parkObj.description}</p>
@@ -22,5 +23,6 @@ export const Park = (parkObj) => {
                 return `<li>${activity.name}</li>`
         }).join("")}
         </ul>
+    </div>
     `
 }
